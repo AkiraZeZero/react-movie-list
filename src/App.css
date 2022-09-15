@@ -1,38 +1,102 @@
 .App {
   text-align: center;
+  /* background-image: url("https://i.pinimg.com/originals/ef/9f/bb/ef9fbbd9dd0d6ec09e356a49a5250b02.gif"); */
+  /* background-image: url("https://i.pinimg.com/originals/a8/30/02/a83002da3a3bdceac3f3226a4f1d1bdf.gif");
+  background-size: cover;
+  background-attachment: fixed; */
+  font-family: "Courier New", Courier, monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movieTitle {
+  font-size: 1em;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  padding-top: 0.3em;
+  max-height: 3em;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.movieImg {
+  width: 97%;
+  min-height: 25em;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-style: solid;
+  border-width: 0.3em;
+  border-color: white;
+}
+
+.movieImg:hover {
+  box-shadow: 0px 0px 12px 2px whitesmoke;
+  /* box-shadow: */
+  /* 0px 0px 2px 1px red, */
+  /* 0px 0px 4px 2px orange, */
+  /* 0px 0px 6px 3px yellow, */
+  /* 0px 0px 8px 4px green, */
+  /* 0px 0px 10px 5px blue, */
+  /* 0px 0px 12px 6px indigo, */
+  /* 0px 0px 14px 7px violet; */
+  /* animation:infinite; */
+}
+
+.movieDisplayContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 2%;
+}
+
+.movieCard {
+  width: 275px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+  /* background-color: rgb(255, 255, 255); */
+  /* border-color: red; */
+  /* border-style: dashed; */
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 55%;
+}
+
+button {
+  align-items: center;
+  border-radius: 3em;
+  font-size: 15px;
+  padding: 1.75%;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  background-color: white;
+  border-style: none;
+  /* border-color: red; */
+  /* border-style: dashed; */
+}
+
+.movieContainer {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 15px;
+  padding: 2%;
 }

@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html {
+  background-image: url("https://i.pinimg.com/originals/a8/30/02/a83002da3a3bdceac3f3226a4f1d1bdf.gif");
+  background-size: cover;
+  background-attachment: fixed;
+}
